@@ -7,4 +7,12 @@
     <string name="get_started">Get Started</string>
     <string name="sign_up">Sign Up</string>
     <string name="admin">Admin</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="phone_no">Phone No</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="city">City</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
