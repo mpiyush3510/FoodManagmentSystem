@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FoodManagmentSystem</string>
+    <string name="welcome_back">Welcome Back !</string>
+    <string name="email_or_phone">Email or Phone</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
