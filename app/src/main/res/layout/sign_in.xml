@@ -5,113 +5,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
-    android:gravity="center"
+    android:background="@color/Secondary"
     tools:context=".Activities.SignIn">
 
-    <LinearLayout
-        android:id="@+id/ll1"
-        android:layout_margin="22dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="256dp"
-            android:layout_height="256dp"
-            android:layout_gravity="center"
-            android:src="@drawable/tasty_food"/>
-
-    </LinearLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="479dp"
-        android:layout_marginTop="22dp"
-        android:layout_alignParentBottom="true"
-        android:animateLayoutChanges="true"
-        android:background="@drawable/background_content">
-
-        <TextView
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/welcome_back"
-            android:textColor="@color/White"
-            android:paddingStart="22dp"
-            android:paddingEnd="27dp"
-            android:textSize="32sp"
-            android:textStyle="bold"
-            android:paddingTop="22dp"
-            android:paddingBottom="22dp"
-            android:layout_margin="12dp" />
+            android:layout_height="400dp"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/background_content2">
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="330dp"
-            android:layout_height="250dp"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            android:layout_gravity="center"
-            android:paddingTop="122dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="330dp"
+                android:layout_height="330dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:cardBackgroundColor="@color/Secondary"
+                android:layout_gravity="center"
+                app:cardCornerRadius="32dp"
+                android:paddingTop="122dp">
 
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:text="@string/sign_in"
-                android:textColor="@color/Primary"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal"/>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                app:boxStrokeColor="@color/Primary"
-                android:paddingTop="52dp"
-                android:hint="@string/email_or_phone"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/Black"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                app:boxStrokeColor="@color/Primary"
-                android:layout_gravity="center_horizontal"
-                android:paddingTop="118dp"
-                android:hint="@string/password"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/Black"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingTop="190dp">
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/SignIn"
-                    android:layout_width="150dp"
-                    android:layout_height="52dp"
                     android:text="@string/sign_in"
-                    android:textSize="18sp"
-                    android:backgroundTint="@color/Primary"
-                    android:textColor="@color/White"
+                    android:textColor="@color/Primary"
                     android:textStyle="bold"
+                    android:textSize="32sp"
                     android:gravity="center"
-                    app:cornerRadius="10dp"/>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-    </FrameLayout>
+                    android:layout_margin="22dp"
+                    android:padding="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_horizontal"
+                        app:boxStrokeColor="@color/Primary"
+                        android:hint="@string/email_or_phone"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Black"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:boxStrokeColor="@color/Primary"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="@string/password"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Black"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center"
+                    android:paddingTop="190dp"
+                    android:paddingBottom="22dp">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/SignIn"
+                        android:layout_width="150dp"
+                        android:layout_height="52dp"
+                        android:text="@string/sign_in"
+                        android:textSize="18sp"
+                        android:backgroundTint="@color/Primary"
+                        android:textColor="@color/White"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        app:cornerRadius="10dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </FrameLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="372dp"
+        android:layout_height="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/sign_logo"/>
 </RelativeLayout>
