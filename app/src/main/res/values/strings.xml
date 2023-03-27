@@ -15,4 +15,6 @@
     <string name="female">Female</string>
     <string name="city">City</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="new_user">New User ?</string>
+    <string name="already_have_an_account">Already have an account</string>
 </resources>

@@ -50,6 +50,8 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/EmailOrPhone"
+                            android:inputType="text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/Black"/>
@@ -66,6 +68,8 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Password"
+                            android:inputType="textPassword"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="@color/Black"/>
@@ -74,28 +78,42 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="bottom|center"
-                    android:paddingTop="190dp"
-                    android:paddingBottom="22dp">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:layout_gravity="bottom|center"
+                    android:orientation="vertical">
+
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/SignIn"
                         android:layout_width="150dp"
                         android:layout_height="52dp"
                         android:text="@string/sign_in"
                         android:textSize="18sp"
+                        android:layout_marginTop="2dp"
                         android:backgroundTint="@color/Primary"
                         android:textColor="@color/White"
                         android:textStyle="bold"
                         android:gravity="center"
                         app:cornerRadius="10dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/NewUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/new_user"
+                        android:layout_marginTop="2dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/Primary"
+                        android:paddingTop="4dp" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
         </FrameLayout>
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/Adminsy5"
         android:layout_width="372dp"
         android:layout_height="320dp"
         android:layout_centerHorizontal="true"
